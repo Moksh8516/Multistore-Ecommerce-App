@@ -9,15 +9,15 @@
   ],
 
   "routes": [
-    { "src": "/api/v1/user", "dest": "app.js" },
-    { "src": "/api/product", "dest": "app.js" },
-    { "src": "/api/brands", "dest": "app.js" },
-    { "src": "/api/categories", "dest": "app.js" },
-    { "src": "/api/address", "dest": "app.js" },
-    { "src": "/api/review", "dest": "app.js" },
-    { "src": "/api/cart", "dest": "app.js" },
-    { "src": "/api/order", "dest": "app.js" },
-    { "src": "/api/payment", "dest": "app.js" },
-    { "src": "/(.*)", "dest": "app.js" }
+    { "src": "/api/v1/user", "dest": "./src/app.js" },
+    { "src": "/api/product", "dest": "./src/app.js" },
+    { "src": "/api/brands", "dest": "./src/app.js" },
+    { "src": "/api/categories", "dest": "./src/app.js" },
+    { "src": "/api/address", "dest": "./src/app.js" },
+    { "src": "/api/review", "dest": "./src/app.js" },
+    { "src": "/api/cart", "dest": "./src/app.js" },
+    { "src": "/api/order", "dest": "./src/app.js" },
+    { "src": "/api/payment", "dest": "./src/app.js" },
+    { "src": "/(.*)", "dest": "./src/app.js" }
   ]
 }
