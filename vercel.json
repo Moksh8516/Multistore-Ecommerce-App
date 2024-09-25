@@ -3,17 +3,14 @@
    "name": "multistore-ecommerce-api",
    "builds": [
      {
-       "src": "src/index.js",
-       "use": "@vercel/node",
-       "config": {
-         "includeFiles": ["*.env"] 
-       }
+       "src": "./src/index.js",
+       "use": "@vercel/node"
      }
    ],
    "routes": [
      {
        "src": "/(.*)",
-       "dest": "src/app.js"
+       "dest": "./src/app.js"
      }
    ]
  }
