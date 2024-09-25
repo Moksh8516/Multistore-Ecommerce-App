@@ -15,7 +15,9 @@ app.use(cors({
 }))
 app.use(express.static("public"))
 app.use(cookieParser())
-
+app.get("/", (req, res) => {
+  res.send("Hello World")
+})
 // import routes
 import { router as userRouter } from "./routes/user.routes.js"
 import { router as productRouter } from "./routes/product.routes.js"
