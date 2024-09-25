@@ -5,7 +5,7 @@
      { "src": "-r dotenv/config --experimental-json-modules src/index.js", "use": "@vercel/node" }
    ],
    "routes": [
-     { "src": "/(.*)", "dest": "/src/app.js" }
+     { "src": "/(.*)", "dest": "./src/app.js" }
    ]
  }
  
