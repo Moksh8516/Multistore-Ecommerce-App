@@ -1,10 +1,11 @@
 {
-  "version": 2,
-  "name": "multistore-ecommerce-api",
-  "builds": [
-     { "src": "./src/app.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-     { "src": "/(.*)", "dest": "./src/app.js" }
-  ]
-}
+   "version": 2,
+   "name": "multistore-ecommerce-api",
+   "builds": [
+     { "src": "src/app.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+     { "src": "/(.*)", "dest": "/app.js" }
+   ]
+ }
+ 
