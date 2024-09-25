@@ -2,7 +2,7 @@
    "version": 2,
    "name": "multistore-ecommerce-api",
    "builds": [
-     { "src": "src/index.js", "use": "@vercel/node" }
+     { "src": "-r dotenv/config --experimental-json-modules src/index.js", "use": "@vercel/node" }
    ],
    "routes": [
      { "src": "/(.*)", "dest": "/src/app.js" }
