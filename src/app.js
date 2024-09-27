@@ -1,7 +1,15 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser"
+import Path from "path"
 const app = express();
+import { fileURLToPath } from 'url';
+
+// __filename equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+
+// __dirname equivalent in ES modules
+const __dirname = Path.dirname(__filename);
 
 // middlewares
 app.use(express.json({ limit: "20kb" }));
@@ -15,6 +23,7 @@ app.use(cors({
 }))
 app.use(express.static("public"))
 app.use(cookieParser())
+app.use(express.static(Path.resolve(__dirname, 'dist')))
 app.get("/", (req, res) => {
   res.send("Hello World")
 })
