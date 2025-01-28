@@ -4,6 +4,6 @@ import { createOrder, fetchOrder } from "../controllers/order.controller.js";
 const router = Router();
 
 router.route("/").post(verifyJWT, createOrder)
-router.route("/").get(verifyJWT, fetchOrder)
+router.route("/getorder").post(verifyJWT, fetchOrder)
 
 export { router }
