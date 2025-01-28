@@ -20,7 +20,7 @@ app.use(express.urlencoded({
 app.use(cors({
   origin: process.env.CORS_ORIGIN,
   methods: "GET,PUT,PATCH,POST,DELETE",
-  Credential: true,
+  credentials: true,
 }))
 app.use(express.static("public"))
 app.use(cookieParser())
