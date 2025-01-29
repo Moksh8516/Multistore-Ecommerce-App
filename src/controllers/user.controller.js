@@ -20,7 +20,8 @@ const generateAccessAndRefreshToken = async (userId) => {
 
 const options = {
   httpOnly: true,
-  secure: true
+  secure: true,
+  sameSite: 'None'
 }
 
 const register = asyncHandler(async (req, res) => {
